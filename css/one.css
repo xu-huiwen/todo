@@ -130,6 +130,9 @@ body{
 	position: relative;
 	height: auto;
 }
+.zong{
+	display:block;
+}
 .banner img{
 	position: absolute;
 	top: 0;
@@ -150,6 +153,7 @@ body{
 	top: 9.2rem;
 	color: #FFF;
 }
+
 /*2*/
 .zong2{
 	display: none;
@@ -274,7 +278,15 @@ line-height: 1.5rem;
 .banner3 .top .right .second{
 	display: none;
 }
-
+.op .top .right .first{
+	color: #63D7C9;
+	display: inline-block;
+	margin-right: 0.45rem;
+}
+.op .top .right .second{
+	margin-right: 0.45rem;
+	display: inline-block;
+}
 .banner3 .bottom{
 	width: 100%;
 	height: 50%;
@@ -323,6 +335,18 @@ line-height: 1.5rem;
 }
 .footer3 .right img{
 	max-width: 100%;
+}
+/*删除*/
+.ani-delete {
+  animation: delete 0.8s ease both;
+}
+@keyframes delete{
+	from{
+		transform: translate3d(0,0,0);
+	}
+	to{
+		transform: translate3d(150%,0,0);
+	}
 }
 /*4*/
 .zong4{
@@ -576,4 +600,36 @@ line-height: 1.5rem;
 	background: #51D2C2;
 	color: #FFF;
 	
+}
+.yidong{
+	animation: leo 1s linear forwards;
+}
+
+@keyframes leo{
+	from{
+		opacity: 1;
+		transform: translateX(0%);
+	}
+	to{
+		opacity: 0;
+		transform: translateX(-150%);
+	}
+}
+.yidong1{
+	animation: leo1 2s linear forwards;
+}
+@keyframes leo1{
+	from{
+		
+		/*transform: translateX(150%);*/
+		opacity: 0;
+	}
+	to{
+		
+		/*transform: translateX(0%);*/
+		opacity: 1;
+	}
+}
+.active{
+	text-decoration: underline;
 }
