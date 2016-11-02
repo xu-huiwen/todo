@@ -1,0 +1,223 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: 0;
+  font-style: normal;
+  font-family: "微软雅黑";
+  color: #777779;
+}
+
+img {
+  vertical-align: middle;
+}
+
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 29.62963px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 33.33333px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 34.72222px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 35.55556px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 38.14815px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 38.33333px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 55.55556px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 59.25926px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 71.11111px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 74.07407px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 118.51852px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 148.14815px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 133.33333px;
+  }
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+  url('iconfont.woff') format('woff'),
+  url('iconfont.ttf') format('truetype'),
+  url('iconfont.svg#iconfont') format('svg');
+}
+.icon{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.head {
+	width: 100%;
+  height: 0.69rem;
+  
+}
+.head img{
+  	max-width: 100%;
+}
+.logo{
+	width: 100%;
+	height:1.5rem ;
+	background: url(../img/2.png)no-repeat;
+/*	position: relative;*/
+line-height: 1.5rem;
+}
+.logo .left{
+	position: absolute;
+	left: 0.45rem;
+	top: 0.7rem;
+	color: #fff;
+	font-family: "宋体";
+	font-weight: bold;
+	width: 0.5rem;
+}
+.logo  .right{
+	position: absolute;
+	right: 0.45rem;
+	top: 0.7rem;
+  color: #fff;
+}
+.banner{
+	width: 100%;
+	height: 2.15rem;
+	background: #FFFFFF;
+	border-bottom: 2px solid #ccc;
+}
+.banner .top{
+	width: 100%;
+	height: 50%;
+}
+.banner .top .left{
+	float: left;
+	margin-left: 0.45rem;
+	margin-top: 0.225rem;
+}
+.banner .top .right{
+	float: right;
+	margin-right: 0.45rem;
+	margin-top: 0.225rem;
+}
+.banner .top .right .last{
+	color: #FEE157;
+}
+.banner .top .right .first{
+	color: #63D7C9;
+}
+
+
+.banner .bottom{
+	width: 100%;
+	height: 50%;
+}
+.banner .bottom .left{
+	float: left;
+	margin-left: 0.45rem;
+	margin-top: 0.225rem;
+}
+.banner .bottom .right{
+	float: right;
+	margin-right: 0.45rem;
+	margin-top: 0.225rem;
+}
+.banner .bottom .right .last{
+	color: #FEE157;
+}
+.body{
+	height: 14.84rem;
+	width: 100%;
+	background: #F3F3F3;
+}
+.footer{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding-top: 0.45rem;
+	overflow: hidden;
+	background: #FFF;
+}
+.footer .left{
+	width: 1.5rem;
+	float: left;
+	margin-bottom: 0.6rem;
+	margin-left: 0.6rem;
+}
+.footer .left img{
+	max-width: 100%;
+}
+.footer .right{
+	float: right;
+	width: 1.5rem;
+	margin-bottom: 0.6rem;
+	margin-right: 0.6rem;
+}
+.footer .right img{
+	max-width: 100%;
+}
