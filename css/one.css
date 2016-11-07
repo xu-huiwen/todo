@@ -122,9 +122,9 @@ body{
   height: 0.69rem;
   
 }
-.head img{
+/*.head img{
   	max-width: 100%;
-}
+}*/
 .banner{
 	width: 100%;
 	position: relative;
@@ -157,6 +157,7 @@ body{
 /*2*/
 .zong2{
 	display: none;
+	overflow: hidden;
 }
 .banner2{
 	width: 100%;
@@ -225,6 +226,7 @@ body{
 /*3*/
 .zong3{
 	display: none;
+	overflow: hidden;
 }
 .logo3{
 	width: 100%;
@@ -310,6 +312,7 @@ line-height: 1.5rem;
 	background: #F3F3F3;
 }
 .footer3{
+	display: none;
 	width: 100%;
 	position: absolute;
 	left: 0;
@@ -351,6 +354,7 @@ line-height: 1.5rem;
 /*4*/
 .zong4{
 	display: none;
+	overflow: hidden;
 }
 .logo4{
 	width: 100%;
@@ -390,6 +394,7 @@ line-height: 1.5rem;
 /*5*/
 .zong5{
 	display: none;
+	overflow: hidden;
 }
 .logo5{
 	width: 100%;
@@ -504,6 +509,7 @@ line-height: 1.5rem;
 /*6*/
 .zong6{
 	display: none;
+	overflow: hidden;
 }
 .logo6{
 	width: 100%;
