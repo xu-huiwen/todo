@@ -122,29 +122,33 @@ body,html{
 	height: 100%;
 	position: relative;
 }
-/*.head {
-	width: 100%;
+.head {
+	/*width: 100%;
   height: 0.69rem;
-  
-}*/
+  background: #777777;*/
+}
 /*.head img{
   	max-width: 100%;
 }*/
 .banner{
 	width: 100%;
-	position: relative;
 	height: 100%;
+	position: relative;
+	height: auto;
 }
 .zong{
 	width: 100%;
 	height: 100%;
 	display:block;
+	overflow: hidden;
+	background: url(../img/2.png)no-repeat;
+	background-size: 100% 100%;
 }
 .banner img{
 	position: absolute;
 	top: 0;
 	left: 0;
-  /*max-width: 100%;*/
+  max-width: 100%;
   max-height: 100%;
 }
 .kaishi{
@@ -157,7 +161,7 @@ body,html{
 	font-size: 18px;
 	text-align: center;
 	line-height: 1.5rem;
-	left: 4.9rem;
+	left: 4.6rem;
 	top: 8.8rem;
 	color: #FFF;
 }
