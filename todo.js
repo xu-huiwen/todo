@@ -1,4 +1,16 @@
 $(function(){
+	var nav1=$(".zong2 .banner2 .nav1")
+	var fullTime
+	var time=new Date()
+	var nowTime
+	var nowHour
+	var nowFen
+	var start
+	nowTime=time.toLocaleDateString()
+	nowHour=time.getHours()
+	nowFen=time.getMinutes()
+	fullTime=nowHour+':'+nowFen
+	nav1.html(nowTime);	
 	$(".kaishi").click(function(){
 		$(".zong").css("display","none");
 		$(".zong5").css("display","block");
@@ -36,7 +48,7 @@ $(function(){
 		todos=JSON.parse(localStorage.todos);
 			for(var i=0; i<todos.length; i++){
 				var c=(todos[i].state)?" op":""
-			$('<div class="banner3'+ c+'"><div class="top"><div class="left">'+todos[i].name+'</div><div class="right"><span class="icon first">&#xe764;</span><span class="icon second">&#xe604;</span><span class="icon last">&#xe623;</span></div></div><div class="bottom"><div class="left">04:04</div><div class="right"><span class="icon last">&#xe631;</span><span>04:04</span></div></div></div>').appendTo(".addt");
+			$('<div class="banner3'+ c+'"><div class="top"><div class="left">'+todos[i].name+'</div><div class="right"><span class="icon first">&#xe764;</span><span class="icon second">&#xe604;</span><span class="icon last">&#xe623;</span></div></div><div class="bottom"><div class="left">'+fullTime+'</div><div class="right"><span class="icon last">&#xe631;</span><span>'+fullTime+'</span></div></div></div>').appendTo(".addt");
 			}
 	}
 	add.on("touchend",function(){
@@ -53,7 +65,7 @@ $(function(){
 		};
 		todos.push(todo)
 		localStorage.todos=JSON.stringify(todos)
-		$('<div class="banner3"><div class="top"><div class="left">'+v+'</div><div class="right"><span class="icon first">&#xe764;</span><span class="icon second">&#xe604;</span><span class="icon last">&#xe623;</span></div></div><div class="bottom"><div class="left">04:04</div><div class="right"><span class="icon last">&#xe631;</span><span>04:04</span></div></div></div>').appendTo(".addt");
+		$('<div class="banner3"><div class="top"><div class="left">'+v+'</div><div class="right"><span class="icon first">&#xe764;</span><span class="icon second">&#xe604;</span><span class="icon last">&#xe623;</span></div></div><div class="bottom"><div class="left">'+fullTime+'</div><div class="right"><span class="icon last">&#xe631;</span><span>'+fullTime+'</span></div></div></div>').appendTo(".addt");
 		input.val("");
 	})
 	
