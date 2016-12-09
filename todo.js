@@ -81,7 +81,7 @@ $(function(){
 		localStorage.todos=JSON.stringify(todos);
 		li.addClass("ani-delete")
 
-		li.delay(800).queue(function(){
+		li.queue(function(){
 			$(this).remove().dequeue();
 		localStorage.todos=JSON.stringify(todos);
 		})
